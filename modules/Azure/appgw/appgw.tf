@@ -7,7 +7,7 @@ resource "azurerm_public_ip" "appgw_pip" {
 }
 
 resource "azurerm_application_gateway" "appgw" {
-  name                = "prod-appgw"
+  name                = "dev-appgw"
   resource_group_name = var.resource_group_name
   location            = var.location
 

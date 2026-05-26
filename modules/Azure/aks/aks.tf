@@ -5,10 +5,10 @@ resource "azurerm_user_assigned_identity" "aks_identity" {
 }
 
 resource "azurerm_kubernetes_cluster" "aks" {
-  name                = "prod-aks"
+  name                = "dev-aks"
   location            = var.location
   resource_group_name = var.resource_group_name
-  dns_prefix          = "prodaks"
+  dns_prefix          = "devaks"
   kubernetes_version  = "1.35"
 
   default_node_pool {
